@@ -1,0 +1,26 @@
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff url("/img/soce_preload_05.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+
+.vanish{
+    animation : vanish 1s forwards;   
+}
+
+@keyframes vanish{
+    80%{
+        opacity : 1;
+    }
+    100%{
+        opacity : 0;
+        visibility : hidden;
+    }
+}
+
+

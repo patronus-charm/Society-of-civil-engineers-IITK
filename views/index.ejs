@@ -1,0 +1,170 @@
+<%- include('header') %>
+<div id="loading">
+    
+</div> 
+
+ <section class="header">
+     <nav>
+         <a href="index.html">
+             <img data-aos="slide-right" src="/img/logo.png" alt="" id="logo"></a>
+             <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                 <ul>
+                     <li data-aos="slide-left"><a href="">Home</a></li>
+                     <li data-aos="slide-left"><a href="">About</a></li>
+                     <li data-aos="slide-left"><a href="">Contact</a></li>
+                     <li data-aos="slide-left"><a href="/activities">Activities</a></li>
+                     <li data-aos="slide-left"> <a href="">Department</a> </li>
+                     <li data-aos="slide-left"><a href="">Student Section</a></li>
+                 </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+     </nav> 
+
+     <div  class="text-box">
+         <h1 data-aos="slide-right">Society of</h1>
+         <h1 data-aos="slide-right">Civil</h1>
+         <h1 data-aos="slide-right">Engineers</h1>
+         <p >"EE SALA CUP NAMDE : SMILE IN PAIN IPL 2021 EDITION"</p>
+     </div>
+
+ </section>
+
+ <section data-aos="slide-up"  class="section1">
+    
+    <div class="content-box">
+        <h1 data-aos="slide-right">About Us</h1>
+        <p data-aos="slide-right">SOCE (Society of Civil Engineers, IIT Kanpur) is a student body. 
+            It serves as a link between enrolled Civil Engineering students, alumni and professors at IIT Kanpur. 
+            This society is an effort to allow free communication and sharing of ideas and information among all.</p>
+            <a href="about">       
+                <p data-aos="slide-right"> Read More &gt;</p> 
+            </a>
+            
+    </div>
+    
+
+</section>
+
+<!-- Main Highlights -->
+<section data-aos="slide-up" class="Main_Highlights">
+
+    <h1 data-aos="slide-right">Main Highlights</h1>
+    <p data-aos="slide-right">Get to know about your branch related faculties and the events organised by SoCE for you to get the feel of your branch and future possiblities for you in Civil engineering.</p>
+  
+    <div class="card_deck">
+  
+      <div data-aos="zoom-in" class="card">
+        <img class="card_image" src="/img/Student sec.jpg" alt="Student-section" >
+  
+          <h3>Student section</h3>
+  
+      </div>
+  
+      <div data-aos="zoom-in" class="card">
+        <img class="card_image" src="/img/Department.jpg" alt="Department" >
+  
+          <h3>Department</h3>
+  
+      </div>
+  
+      <div data-aos="zoom-in" class="card">
+        <img class="card_image" src="/img/Activities.jpg" alt="Activities">
+  
+          <h3>Activities</h3>
+  
+      </div>
+  
+    </div>
+</section>
+  
+<section data-aos="slide-up" class="recent">
+    <h1 data-aos="slide-right">Recent Activities</h1>
+    <div id="frame">
+        <input type="radio" name="frame" id="frame1" checked />
+        <input type="radio" name="frame" id="frame2" />
+        <input type="radio" name="frame" id="frame3" />
+        <input type="radio" name="frame" id="frame4" />
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="frame frame_1">
+                        <div class="frame-content">
+                            <h2><img src="/img/Activities_card_images.jpg""></h2>
+                        </div>
+                    </div>
+                    <div class="frame frame_2">
+                        <div class="frame-content">
+                            <h2><img src="/img/Activities_card_images.jpg""></h2>
+                        </div>
+                    </div>
+                    <div class="frame frame_3">
+                        <div class="frame-content">
+                            <h2><img src="/img/Activities_card_images.jpg""></h2>
+                        </div>
+                    </div>
+                    <div class="frame frame_4">
+                        <div class="frame-content">
+                            <h2><img src="/img/Activities_card_images.jpg"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="frame1">Abhishek</label>
+            <label for="frame2">Shubham</label>
+            <label for="frame3">Saurabh</label>
+            <label for="frame4">Prachi</label>
+        </div>
+        <div id="bullets">
+            <label for="frame1">Aman</label>
+            <label for="frame2">Nikhil</label>
+            <label for="frame3">Faiza</label>
+            <label for="frame4">Shobhit</label>
+        </div>
+    </div>
+
+</section>
+
+</section>
+
+<section data-aos="slide-up" class="contact-us">
+    <h1 data-aos="slide-right">Contact us</h1>
+    <div>
+        <h3 data-aos="slide-right"><i  class="fa fa-envelope" aria-hidden="true"></i>Email</h3>
+        <p data-aos="slide-right">SoCE@iitk.ac.in</p>
+        <h3 data-aos="slide-right"><i  class="fa fa-phone" aria-hidden="true"></i>Phone Number</h3>
+        <p data-aos="slide-right">(123) 456-7890</p>
+        <h3 data-aos="slide-right"><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h3>
+        <p data-aos="slide-right">IITK, Kalyanpur, Kanpur, Uttar Pradesh 208016</p>
+        <br>
+        <br>
+        <br>
+        <div data-aos="zoom-in" class="icon">
+            <a href="#" class="mbr-iconfont socicon-facebook socicon social
+            " aria-hidden="true"></a>
+            <a href="#" class="mbr-iconfont socicon-instagram socicon social
+            " aria-hidden="true"></a>
+            <a href="#" class="mbr-iconfont socicon-linkedin socicon  social
+            " aria-hidden="true"></a>
+
+        </div>
+        
+    
+
+    </div>
+   
+</section>
+
+<script>
+    var navLinks=document.getElementById("nav-links");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-75vw";
+    }
+
+</script>
+<%- include('footer') %>

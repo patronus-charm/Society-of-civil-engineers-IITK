@@ -1,0 +1,92 @@
+<%- include('header') %>
+<div id="loading">
+    
+</div> 
+
+ <section class="activities_header">
+     <nav>
+         <a href="/">
+             <img data-aos="slide-right" src="/img/soce logo activities.png" style="width: 20rem;" alt="" id="logo" class="logo"></a>
+             <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                 <ul>
+                     <li data-aos="slide-left"><a href="/">Home</a></li>
+                     <li data-aos="slide-left"><a href="">About</a></li>
+                     <li data-aos="slide-left"><a href="">Contact</a></li>
+                     <li data-aos="slide-left"><a href="/activities">Activities</a></li>
+                     <li data-aos="slide-left"> <a href="">Department</a> </li>
+                     <li data-aos="slide-left"><a href="">Student Section</a></li>
+                 </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+     </nav> 
+
+     <div id="alpha">
+        <h1 data-aos="slide-down" class="activities_heading">   ACTIVITIES  </h1><br>
+        <hr data-aos="slide-up" id="rule">
+    </div>
+
+
+    <div data-aos="zoom-in" class="activities_card_deck">
+  
+        <div class="activities_card">
+          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
+    
+            <h3>FUN EVENTS</h3>
+            
+    
+        </div>
+    
+        <div data-aos="zoom-in" class="activities_card">
+          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
+    
+            <h3>ALUMNI TALKS</h3>
+            
+    
+        </div>
+    
+        <div data-aos="zoom-in" class="activities_card">
+          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+    
+            <h3>STRENGTHS MAGAZINE</h3>
+            
+    
+        </div>
+
+        <div data-aos="zoom-in" class="activities_card">
+            <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+      
+              <h3>PLACEMENT POSTULATES</h3>
+                    
+          </div>
+
+          <div data-aos="zoom-in" class="activities_card">
+            <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+      
+              <h3>DEPARTMENT GET TOGETHER</h3>
+              
+      
+          </div>
+    
+      </div>
+     
+ </section>
+
+
+
+
+
+
+
+ <script>
+    var navLinks=document.getElementById("nav-links");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-75vw";
+    }
+
+</script>
+ 
+ <%- include('footer') %>
