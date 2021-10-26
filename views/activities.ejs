@@ -1,121 +1,166 @@
 <%- include('header') %>
-<div id="loading">
-    
-</div> 
+    <div id="loading">
 
- <section class="activities_header" id="activities">
-     <nav>
-         <a href="/">
-             <img data-aos="slide-right" src="/img/soce logo activities.png" style="width: 20rem;" alt="" id="logo" class="logo"></a>
-             <div class="nav-links" id="nav-links">
-                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
-                 <ul>
-                     <li data-aos="slide-left"><a href="/">Home</a></li>
-                     <li data-aos="slide-left"><a href="">About</a></li>
-                     <li data-aos="slide-left"><a href="">Contact</a></li>
-                     <li data-aos="slide-left"><a href="/activities">Activities</a></li>
-                     <li data-aos="slide-left"> <a href="">Department</a> </li>
-                     <li data-aos="slide-left"><a href="">Student Section</a></li>
-                 </ul>
-             </div>
-             <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
-     </nav> 
-
-     <div class="alpha">
-        <h1 data-aos="slide-down" class="activities_heading">   ACTIVITIES  </h1><br>
-        <hr data-aos="slide-up" id="rule">
     </div>
 
+    <section class="activities_header" id="activities">
+        <nav>
+            <a href="/">
+                <img data-aos="slide-right" src="/img/soce_circle_white.png" style="height: 80px;" alt="" id="logo"
+                    class="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li data-aos="slide-left"><a href="/">Home</a></li>
+                    <li data-aos="slide-left"><a href="">About</a></li>
+                    <li data-aos="slide-left"><a href="">Contact</a></li>
+                    <li data-aos="slide-left"><a href="/activities">Activities</a></li>
+                    <li data-aos="slide-left"> <a href="">Department</a> </li>
+                    <li data-aos="slide-left"><a href="">Student Section</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
 
-    <div data-aos="zoom-in" class="activities_card_deck">
-  
-        <div data-aos="zoom-in" class="activities_card" id="fun_event" onclick="fun()">
-          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
-    
-            <h3>FUN EVENTS</h3>
-            
-    
-        </div>
-    
-        <div data-aos="zoom-in" class="activities_card">
-          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
-    
-            <h3>ALUMNI TALKS</h3>
-            
-    
-        </div>
-    
-        <div data-aos="zoom-in" class="activities_card" id="strengths_mag" onclick="strength()">
-          <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
-    
-            <h3>STRENGTHS MAGAZINE</h3>
-            
-    
+        <div class="alpha">
+            <h1 data-aos="slide-down" class="activities_heading"> ACTIVITIES </h1><br>
+            <hr data-aos="slide-up" id="rule">
         </div>
 
-        <div data-aos="zoom-in" class="activities_card">
-            <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
-      
-              <h3>PLACEMENT POSTULATES</h3>
-                    
-          </div>
 
-          <div data-aos="zoom-in" class="activities_card">
-            <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
-      
-              <h3>DEPARTMENT GET TOGETHER</h3>
-              
-      
-          </div>
+        <div data-aos="zoom-in" class="activities_card_deck">
+
+            <div data-aos="zoom-in" class="activities_card" id="fun_event" onclick="fun()">
+                <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+
+                <h3>FUN EVENTS</h3>
+
+
+            </div>
+
+            <div data-aos="zoom-in" class="activities_card">
+                <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+
+                <h3>ALUMNI TALKS</h3>
+
+
+            </div>
+
+            <div data-aos="zoom-in" class="activities_card" id="strengths_mag" onclick="strength()">
+                <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+
+                <h3>STRENGTHS MAGAZINE</h3>
+
+
+            </div>
+
+            <div data-aos="zoom-in" class="activities_card">
+                <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+
+                <h3>PLACEMENT POSTULATES</h3>
+
+            </div>
+
+            <div data-aos="zoom-in" class="activities_card" id="get-together" onclick="departmental()">
+                <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
+
+                <h3>DEPARTMENT GET TOGETHER</h3>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <%- include('fun_events') %>
+        <!-- <%- include('alumni')  %>  -->
+        <%- include('strength') %>
+            <%- include('departmental') %>
     
-      </div>
-     
- </section>
+    
+                <!--  -->
+                <script>
+                    var navLinks = document.getElementById("nav-links");
+                    function showMenu() {
+                        navLinks.style.right = "0";
+                    }
+                    function hideMenu() {
+                        navLinks.style.right = "-75vw";
+                    }
+
+                    var funs = document.getElementById("fun_events");
+                    function fun() {
+
+                        funs.style.display = "block";
+                        var temp = document.getElementById("activities");
+                        funs.scrollIntoView();
+
+
+                    }
+
+                    var temp = document.getElementById("activities");
+                    function upArrow() {
+                        funs.style.display = "none";
+                        temp.scrollIntoView();
+                    }
+
+                    var mag = document.getElementById("strength");
+                    function strength() {
+                        mag.style.display = "block";
+                        mag.scrollIntoView();
+                    }
+                    var stre = document.getElementById("activities");
+                    function upStrength() {
+                        mag.style.display = "none";
+                        stre.scrollIntoView();
+                    }
+
+                    var dep=document.getElementById("department");
+                    function departmental(){
+                        dep.style.display="block";
+                        dep.scrollIntoView();
+                    }
+                    var de=document.getElementById("activities");
+                    function upDepartment(){
+                        dep.style.display="none";
+                        de.scrollIntoView();
+
+                    }
+
+
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
 
 
 
- <%- include('fun_events') %>
- <!-- <%- include('alumni')  %>  -->
- <%- include('strength') %>
 
+                </script>
 
-
- <script>
-    var navLinks=document.getElementById("nav-links");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-75vw";
-    }
-   
-    var funs=document.getElementById("fun_events");
-    function fun(){
-
-        funs.style.display="block";
-        var temp=document.getElementById("activities");
-        funs.scrollIntoView();
-
-
-    }
-
-    var temp=document.getElementById("activities");
-    function upArrow(){
-        funs.style.display="none";
-        temp.scrollIntoView();
-    }
-
-    var mag=document.getElementById("strength");
-    function strength(){
-        mag.style.display="block";
-        mag.scrollIntoView();    
-    }
-    var stre=document.getElementById("activities");
-    function upStrength(){
-        mag.style.display="none";
-        stre.scrollIntoView();
-    }
-
-</script>
- 
- <%- include('footer') %>
+                <%- include('footer') %>
