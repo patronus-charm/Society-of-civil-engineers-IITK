@@ -29,7 +29,7 @@
 
     <div data-aos="zoom-in" class="activities_card_deck">
   
-        <div class="activities_card" id="fun_event" onclick="fun()">
+        <div data-aos="zoom-in" class="activities_card" id="fun_event" onclick="fun()">
           <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
     
             <h3>FUN EVENTS</h3>
@@ -45,7 +45,7 @@
     
         </div>
     
-        <div data-aos="zoom-in" class="activities_card">
+        <div data-aos="zoom-in" class="activities_card" id="strengths_mag" onclick="strength()">
           <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found">
     
             <h3>STRENGTHS MAGAZINE</h3>
@@ -75,6 +75,8 @@
 
 
  <%- include('fun_events') %>
+ <!-- <%- include('alumni')  %>  -->
+ <%- include('strength') %>
 
 
 
@@ -97,12 +99,22 @@
 
     }
 
-    var temp=getElementById("activites");
+    var temp=document.getElementById("activities");
     function upArrow(){
         funs.style.display="none";
         temp.scrollIntoView();
     }
 
+    var mag=document.getElementById("strength");
+    function strength(){
+        mag.style.display="block";
+        mag.scrollIntoView();    
+    }
+    var stre=document.getElementById("activities");
+    function upStrength(){
+        mag.style.display="none";
+        stre.scrollIntoView();
+    }
 
 </script>
  
