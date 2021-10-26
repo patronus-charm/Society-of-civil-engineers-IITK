@@ -3,7 +3,7 @@
     
 </div> 
 
- <section class="activities_header">
+ <section class="activities_header" id="activities">
      <nav>
          <a href="/">
              <img data-aos="slide-right" src="/img/soce logo activities.png" style="width: 20rem;" alt="" id="logo" class="logo"></a>
@@ -29,7 +29,7 @@
 
     <div data-aos="zoom-in" class="activities_card_deck">
   
-        <div class="activities_card">
+        <div class="activities_card" id="fun_event" onclick="fun()">
           <img class="activities_card_image" src="/img/Activities_card_images.jpg" alt="image not found" >
     
             <h3>FUN EVENTS</h3>
@@ -86,6 +86,23 @@
     function hideMenu(){
         navLinks.style.right="-75vw";
     }
+   
+    var funs=document.getElementById("fun_events");
+    function fun(){
+
+        funs.style.display="block";
+        var temp=document.getElementById("activities");
+        funs.scrollIntoView();
+
+
+    }
+
+    var temp=getElementById("activites");
+    function upArrow(){
+        funs.style.display="none";
+        temp.scrollIntoView();
+    }
+
 
 </script>
  

@@ -3,7 +3,7 @@
     
 </div> 
 
- <section class="header">
+ <section class="header" id="header">
      <nav>
          <a href="/">
              <img data-aos="slide-right" src="/img/logo.png" alt="" id="logo"></a>
@@ -27,10 +27,12 @@
          <h1 data-aos="slide-right">Engineers</h1>
          <p >"EE SALA CUP NAMDE : SMILE IN PAIN IPL 2021 EDITION"</p>
      </div>
-
+     <div>
+        <i class="fa fa-arrow-circle-down" id="down" onclick="about()" aria-hidden="true"></i>
+     </div>
  </section>
 
- <section data-aos="slide-up"  class="section1">
+ <section  class="section1" id="abouts" >
     
     <div class="content-box">
         <h1 data-aos="slide-right">About Us</h1>
@@ -42,12 +44,14 @@
             </a>
             
     </div>
-    
+    <div>
+        <i class="fa fa-arrow-circle-down" style="left: 20%;" id="down" onclick="highlights()" aria-hidden="true"></i>
+    </div>
 
 </section>
 
 <!-- Main Highlights -->
-<section data-aos="slide-up" class="Main_Highlights">
+<section  class="Main_Highlights" id="highlights">
 
     <h1 data-aos="slide-right">Main Highlights</h1>
     <p data-aos="slide-right">Get to know about your branch related faculties and the events organised by SoCE for you to get the feel of your branch and future possiblities for you in Civil engineering.</p>
@@ -76,9 +80,13 @@
       </div>
   
     </div>
+
+    <div style="text-align: center;">
+        <i class="fa fa-arrow-circle-down" id="high" onclick="recent()" aria-hidden="true"></i>
+    </div>
 </section>
   
-<section data-aos="slide-up" class="recent">
+<section  class="recent" id="recent">
     <h1 data-aos="slide-right">Recent Activities</h1>
     <div id="frame">
         <input type="radio" name="frame" id="frame1" checked />
@@ -125,11 +133,15 @@
         </div>
     </div>
 
-</section>
+    <div style="text-align: center;">
+        <i class="fa fa-arrow-circle-down" id="high" onclick="contact()" aria-hidden="true"></i>
+    </div>
 
 </section>
 
-<section data-aos="slide-up" class="contact-us">
+</section>
+
+<section  class="contact-us" id="contact-us">
     <h1 data-aos="slide-right">Contact us</h1>
     <div>
         <h3 data-aos="slide-right"><i  class="fa fa-envelope" aria-hidden="true"></i>Email</h3>
@@ -154,6 +166,10 @@
     
 
     </div>
+
+    <div style="text-align: center; margin-top: 8%;">
+        <i class="fa fa-arrow-circle-up" id="high" onclick="header()" aria-hidden="true"></i>
+    </div>
    
 </section>
 
@@ -165,6 +181,29 @@
     function hideMenu(){
         navLinks.style.right="-75vw";
     }
+    var temp=document.getElementById('abouts');
+    function about(){
+        temp.scrollIntoView(); 
+    }
 
+    var high=document.getElementById("highlights");
+    function highlights(){
+        high.scrollIntoView();
+    }
+
+    var rec=document.getElementById("recent");
+    function recent(){
+        rec.scrollIntoView();
+    }
+
+    var cont=document.getElementById("contact-us");
+    function contact(){
+        cont.scrollIntoView();
+    } 
+
+    var head=document.getElementById("header");
+    function header(){
+        head.scrollIntoView();
+    }
 </script>
 <%- include('footer') %>

@@ -18,7 +18,33 @@
     background-position: center;
     position: relative;
 }
+#down{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 2rem;
+}
+#down:hover{
+    cursor: pointer;
+    font-size: 3rem;
+    left: 49.5%;
+    color:#113CFC;
+}
 
+#high{
+    margin-top: 3%;
+    font-size: 2rem;
+    color: white;
+    transition:0.5s;
+}
+
+#high:hover{
+    cursor: pointer;
+    font-size: 3rem;
+    color:#113CFC;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -82,7 +108,7 @@ nav .fa{
 }
 /* -------------------ABOUT SECTION-------------------------------------- */
 .section1{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-image: url("/img/about.jpg");
     background-size: cover;

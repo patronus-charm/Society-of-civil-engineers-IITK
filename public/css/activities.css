@@ -61,16 +61,21 @@
   
   
   }
+ #fun_event:hover{
+     cursor: pointer;
 
-
+ }
 
   /* Fun Events */
 
   .fun_events{
-    min-height: 100vh;
+    display: none;
+    min-height: 150vh;
     width: 100%;
-    background-image: url("/img/activities_bg.jpg");
+    background-image: url("/img/fun.jpg");
+    /* background-color: black; */
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
     color : #fff;
@@ -87,40 +92,96 @@
 
 
 
-  .events p{
-      
-      list-style: none;
-      line-height : 1.5;
-      font-size: 1.5rem;
-      margin-bottom :1%;
-      display: block;
+  .events{
+      display: inline-block;
+      width: 100vw;
+      text-align: center;
+
+
   }
 
-.events p a{
+  .events .h{
+      width: 200px;
+      line-height : 1.5;
+      font-size: 1.5rem;
+      margin-bottom :2%;
+      position: relative;
+      left: 43.5%;
+  }
+
+.events div a{
     text-decoration : none;
     color : #fff;
     transition : 0.8s;
 }
-
-.events p a:hover{
+.hide1{
+    opacity: 0;
+    height: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+.hide2{
+    opacity: 0;
+    height: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+.hide3{
+    opacity: 0;
+    height: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+.hide4{
+    opacity: 0;
+    height: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+.hide5{
+    opacity: 0;
+    height: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+}
+.events div a:hover{
     font-size: 1.8rem;
     background-color: #fff;
     color :black;
-    border-radius: 5px;
-    padding : 0 10px;
+    border-radius: 20px;
+    padding :10px;
     opacity: 0.8; 
 }
 
-
-.hide{
-    display : none;
-    text-align: center;
+.h1:hover+.hide1 {
+    opacity: 1;
+    height: auto;
+}
+.h2:hover+.hide2 {
+    opacity: 1;
+    height: auto;
+}
+.h3:hover+.hide3 {
+    opacity: 1;
+    height: auto;
+}
+.h4:hover+.hide4 {
+    opacity: 1;
+    height: auto;
+}
+.h5:hover+.hide5 {
+    opacity: 1;
+    height: auto;
 }
 
-.myDiv:hover + .hide {
-    display : inline-block;
-    text-align: center;
-    margin-left: 20%;
+.fa-arrow-circle-up{
+    margin-top: 3%;
+    font-size: 1.5rem;
+    transition: 0.5s;
 }
-
+.fa-arrow-circle-up:hover{
+    font-size: 3rem;
+    color: #88E0EF;
+    cursor: pointer;
+}
 
