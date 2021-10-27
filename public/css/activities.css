@@ -344,3 +344,14 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 /* -------------------------- */
+
+/* --------------placement postulates */
+.placement{
+    /* display: none; */
+    background-image: url("/img/mag.jpeg");
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size: cover;
+}
