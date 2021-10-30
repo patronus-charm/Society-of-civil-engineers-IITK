@@ -87,36 +87,56 @@
 </section>
   
 <section  class="recent" id="recent">
+    <div>
     <h1 data-aos="slide-right">Recent Activities</h1>
- <!-- Slider Start -->
- <div class="slideshow-container">
-
-    <div  class="mySlides fade" style="text-align: center;">
-        <div class="numbertext"> </div>
-        <img src="img/recent/1.png" style="width:80%; ">
+</div>
+<div class="recent1">
+    <div class="blog-card">
+        <input type="radio" name="select" id="tap-1" checked>
+        <input type="radio" name="select" id="tap-2">
+        <input type="radio" name="select" id="tap-3">
+        <input type="checkbox" id="imgTap">
+        <div class="sliders">
+          <label for="tap-1" class="tap tap-1"></label>
+          <label for="tap-2" class="tap tap-2"></label>
+          <label for="tap-3" class="tap tap-3"></label>
+        </div>
+        <div class="inner-part">
+          <label for="imgTap" class="img">
+            <img class="img-1" src="/img/2009.jpg">
+          </label>
+          <div class="content content-1">
+            <span>26 December 2017</span>
+            <div class="title">Lorem Ipsum Dolor</div>
+            <div class="rtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo animi atque aliquid pariatur voluptatem numquam, quisquam. Neque est voluptates doloribus!</div>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div class="inner-part">
+          <label for="imgTap" class="img">
+            <img class="img-2" src="/img/2009.jpg">
+          </label>
+          <div class="content content-2">
+            <span>26 December 2018</span>
+            <div class="title">Lorem Ipsum Dolor</div>
+            <div class="rtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos ut consectetur numquam ullam fuga animi laudantium nobis rem molestias.</div>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div class="inner-part">
+          <label for="imgTap" class="img">
+            <img class="img-3" src="/img/2009.jpg">
+          </label>
+          <div class="content content-3">
+            <span>26 December 2019</span>
+            <div class="title">Lorem Ipsum Dolor</div>
+            <div class="rtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod excepturi nemo commodi sint eum ipsam odit atque aliquam officia impedit.</div>
+            <button>Read more</button>
+          </div>
+        </div>
       </div>
-      
-      <div  class="mySlides fade" style="text-align: center;">
-        <div class="numbertext"> </div>
-        <img src="img/recent/2.png" style="width:80%; ">
-      </div>
-      
-      <div  class="mySlides fade" style="text-align: center;">
-        <div class="numbertext"> </div>
-        <img src="img/recent/3.png" style="width:80%; ">
-        
-      </div>
-      
-      
-      
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
     </div>
-
-    <div style="text-align:center;">
-        <i class="fa fa-arrow-circle-up" style="color: #fff;" onclick="upDepartment()" aria-hidden="true"></i>
-    </div>
+  
 
 <!--  -->
 
@@ -189,5 +209,5 @@
         head.scrollIntoView();
     }
 </script>
-<script src="js/slider.js"></script>
+
 <%- include('footer') %>
