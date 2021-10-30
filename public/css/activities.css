@@ -34,7 +34,7 @@
 .activities_card_deck{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
 }
 
@@ -347,7 +347,7 @@ img {vertical-align: middle;}
 
 /* --------------placement postulates */
 .placement{
-    /* display: none; */
+    display: none;
     background-image: url("/img/mag.jpeg");
     min-height: 100vh;
     width: 100%;
