@@ -33,7 +33,6 @@
     cursor: pointer;
     font-size: 3rem;
     left: 49.5%;
-    color:#113CFC;
 }
 
 #high{
@@ -46,7 +45,6 @@
 #high:hover{
     cursor: pointer;
     font-size: 3rem;
-    color:#113CFC;
 }
 nav{
     display: flex;
