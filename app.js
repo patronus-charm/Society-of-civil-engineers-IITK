@@ -2,6 +2,7 @@ const express=require('express');
 const app=express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+const images=require('./data')
 
 app.get('/',(req,res)=>{
     res.render('index');
@@ -12,7 +13,7 @@ app.get('/about',(req,res)=>{
 });
 
 app.get('/activities',function(req,res){
-    res.render("activities");
+    res.render("activities",{images:images});
 })
 app.get('/department',function(req,res){
     res.render("department");

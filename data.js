@@ -1,0 +1,16 @@
+var images=["/img/slide/1.jpg","/img/slide/2.jpg","/img/slide/3.jpg","/img/slide/5.jpg","/img/slide/6.jpg",
+"/img/slide/7.jpg",
+"/img/slide/8.jpg",
+"/img/slide/9.jpg",
+"/img/slide/10.jpg",
+"/img/slide/11.jpg",
+"/img/slide/12.jpg",
+"/img/slide/13.jpg",
+"/img/slide/14.jpg",
+"/img/slide/15.jpg",
+"/img/slide/16.jpg",
+"/img/slide/17.jpg",
+"/img/slide/18.jpg",
+"/img/slide/19.jpg",
+"/img/slide/20.jpg",];
+module.exports=images;
