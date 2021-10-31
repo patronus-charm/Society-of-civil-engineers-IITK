@@ -18,7 +18,9 @@ app.get('/activities',function(req,res){
 app.get('/department',function(req,res){
     res.render("department");
 })
-
+app.get('/student-section',function(res,res){
+    res.render('student-section');
+})
 app.listen(3000,()=>{
     console.log("server started on port 3000");
 });
