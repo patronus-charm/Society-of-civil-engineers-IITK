@@ -12,7 +12,7 @@
                  <ul>
                      <li data-aos="slide-left"><a href="">Home</a></li>
                      <li data-aos="slide-left"><a href="/about">About</a></li>
-                     <li data-aos="slide-left"><a style="cursor:pointer" onclick="menu()">Contact</a></li>
+                     <li data-aos="slide-left"><a href="#contact-us">Contact</a></li>
                      <li data-aos="slide-left"><a href="/activities">Activities</a></li>
                      <li data-aos="slide-left"> <a href="/department">Department</a> </li>
                      <li data-aos="slide-left"><a href="/student-section">Student's Section</a></li>
@@ -179,13 +179,6 @@
 </section>
 
 <script>
-    var navLinks=document.getElementById("nav-links");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-75vw";
-    }
     var temp=document.getElementById('abouts');
     function about(){
         temp.scrollIntoView(); 
@@ -214,5 +207,6 @@
       document.getElementById("contact-us").scrollIntoView();
     }
 </script>
+
 
 <%- include('partials/footer') %>

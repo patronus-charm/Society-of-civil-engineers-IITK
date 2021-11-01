@@ -73,13 +73,17 @@ nav{
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Ubuntu Condensed', sans-serif;
+    transition: 0.2s;
 }
-
+.nav-links ul li a:hover{
+    font-size: 1.8rem;
+    font-weight:800;
+}
 .nav-links ul li::after{
     content:'';
     width: 0%;
-    height: 2px;
-    background:#ffff;
+    height: 3px;
+    background:orange;
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -261,17 +265,22 @@ nav .fa{
         font-weight: bolder;
     }
     .nav-links ul li{
+        font-size: 1.2rem;
         display: block;
+        text-align: center;
+    }
+    .nav-links ul li a{
+        font-size: 2rem;
     }
     .nav-links{
         position: absolute;
-        background:red;
+        background:black;
         height: 100vh;
-        width: 75vw;
-        right: -75vw;
+        width: 100vw;
+        right: -100vw;
         top:0;
         z-index: 2;
-        text-align: left;
+        /* text-align: left; */
         transition: 1s;
     }
     nav .fa{

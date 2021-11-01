@@ -355,3 +355,14 @@ img {vertical-align: middle;}
     background-position: relative;
     background-size: cover;
 }
+
+
+@media (max-width:700px){
+    .activities_card{
+        width: 60%;
+   }
+
+   .activities_header h3{
+       margin-bottom: 10px;
+   }
+}
