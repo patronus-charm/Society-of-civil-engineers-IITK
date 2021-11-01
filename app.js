@@ -18,7 +18,7 @@ app.get('/activities',function(req,res){
 app.get('/department',function(req,res){
     res.render("department");
 })
-app.get('/student-section',function(res,res){
+app.get('/student-section',function(req,res){
     res.render('student-section');
 })
 app.listen(3000,()=>{
